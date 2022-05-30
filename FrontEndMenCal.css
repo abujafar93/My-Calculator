@@ -1,0 +1,201 @@
+:root {
+  --section: hsl(222, 26%, 31%);
+  --color: hsl(0, 0%, 100%);
+  --display: hsl(224, 36%, 15%);
+  --btn: hsl(30, 25%, 89%);
+  --clear-background: hsl(225, 21%, 49%);
+  --clear-shadow: hsl(224, 28%, 35%);
+  --equalSign: hsl(6, 63%, 50%);
+  --equalSign-shadow: hsl(6, 70%, 34%);
+  --num-color: hsl(221, 14%, 31%);
+  --num-shadow: hsl(28, 16%, 65%);
+  --equalSign-color: hsl(0, 0%, 100%);
+  --plate: hsl(223, 31%, 20%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: var(--section);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.headInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#line {
+  display: flex;
+  justify-content: space-between;
+  width: 255px;
+}
+
+h3 {
+  color: var(--color);
+}
+
+.theme {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.theme > p {
+  color: var(--color);
+  margin-right: 10px;
+  font-size: 13px;
+  padding-top: 3px;
+}
+
+#checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: var(--plate);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 5px;
+  height: 20px;
+  width: 58px;
+  position: relative;
+}
+
+#toggle {
+  width: 50px;
+  background-color: var(--plate);
+  -webkit-appearance: none;
+  /* color: var(--equalSign); */
+}
+
+#buttonFig {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color);
+}
+
+#buttonFig > p {
+  margin: 5px;
+}
+
+.display {
+  background-color: var(--display);
+  border-radius: 10px;
+  border: none;
+  margin: 20px 0px 10px 0px;
+  height: 70px;
+  width: 95%;
+  text-align: right;
+  padding: 20px 20px 0px 0px;
+  font-size: 20px;
+  color: var(--color);
+}
+
+.plate {
+  background-color: var(--plate);
+  border-radius: 10px;
+  width: 95%;
+}
+
+.allBtns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 15px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn);
+  height: 35px;
+  width: 50px;
+  outline: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 5px 0px 5px;
+  cursor: pointer;
+}
+
+.num,
+.operator {
+  box-shadow: 0px 3px 0px 0px var(--num-shadow);
+  font-weight: 600;
+  color: var(--num-color);
+}
+
+.clear {
+  background-color: var(--clear-background);
+  color: var(--clear-color);
+  box-shadow: 0px 3px 0px 0px var(--clear-shadow);
+}
+
+.equalSign {
+  background-color: var(--equalSign);
+  color: var(--equalSign-color);
+  box-shadow: 0px 3px 0px 0px var(--equalSign-shadow);
+}
+
+.equalClear {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 15px;
+}
+
+.col {
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  margin-top: 0px;
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.theme2 {
+  --section: hsl(0, 0%, 90%);
+  --color: hsl(60, 10%, 19%);
+  --display: hsl(0, 0%, 93%);
+  --btn: hsl(45, 7%, 89%);
+  --clear-background: hsl(185, 42%, 37%);
+  --clear-color: hsl(0, 0%, 100%);
+  --clear-shadow: hsl(185, 58%, 25%);
+  --equalSign: hsl(25, 98%, 40%);
+  --equalSign-shadow: hsl(25, 99%, 27%);
+  --num-color: hsl(221, 14%, 31%);
+  --num-shadow: hsl(35, 11%, 61%);
+  --equalSign-color: hsl(60, 10%, 19%);
+  --plate: hsl(0, 5%, 81%);
+}
+
+.theme3 {
+  --section: hsl(268, 75%, 9%);
+  --color: hsl(52, 100%, 62%);
+  --display: hsl(268, 71%, 12%);
+  --btn: hsl(268, 47%, 21%);
+  --clear-background: hsl(281, 89%, 26%);
+  --clear-color: hsl(0, 0%, 100%);
+  --clear-shadow: hsl(285, 91%, 52%);
+  --equalSign: hsl(176, 100%, 44%);
+  --equalSign-shadow: hsl(177, 92%, 70%);
+  --num-color: hsl(52, 100%, 62%);
+  --num-shadow: hsl(290, 70%, 36%);
+  --plate: hsl(268, 71%, 12%);
+  --equalSign-color: hsl(198, 20%, 13%);
+}

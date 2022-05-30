@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front End Mentor Calculator</title>
+  <link rel="stylesheet" href="FrontEndMenCal.css">
+</head>
+<body class="go">
+  <section>
+    <div class="container">
+      <div class="headInfo">
+        <div>
+          <div id="buttonFig">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+          </div>
+          <div id="line">
+              <div>
+                <h3>calc</h3>
+              </div>
+              <div class="theme">
+                <p>THEME</p>
+                <form>
+                  <label for="toggle" class="label">
+                  <input type="range" name="theme" id="toggle" min="1" max="3" value="1">
+                  </label>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="display">0</div> -->
+      <form>
+        <input type="text" class="display">
+      </form>
+      <div class="plate">
+        <div class="allBtns">
+          <div class="btn num">7</div>
+          <div class="btn num">8</div>
+          <div class="btn num">9</div>
+          <div class="btn clear clearLastInput">DEL</div>
+          
+          <div class="btn num">4</div>
+          <div class="btn num">5</div>
+          <div class="btn num">6</div>
+          <div class="btn operator">+</div>
+          
+          <div class="btn num">1</div>
+          <div class="btn num">2</div>
+          <div class="btn num">3</div>
+          <div class="btn operator">-</div>
+          
+          <div class="btn num dot">.</div>
+          <div class="btn num zero">0</div>
+          <div class="btn operator">/</div>
+          <div class="btn operator">x</div>        
+        </div>
+        <div class="equalClear">
+          <div class="btn clear col clearAllInput">RESET</div>
+          <div class="btn col equalSign">=</div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="FrontEndMenCal.js"></script>
+</body>
+</html>
