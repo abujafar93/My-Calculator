@@ -1,6 +1,5 @@
 
 // THE THEMES TOGGLE
-
 let toggle = document.getElementById('toggle');
 
 const themer = ()=> {
@@ -19,6 +18,11 @@ const themer = ()=> {
 toggle.addEventListener('change', themer);
 
 
+
+
+
+
+
 const displayEl = document.querySelector('.display');
 const numbersEl = document.querySelectorAll('.num');
 const operatorEl = document.querySelectorAll('.operator');
@@ -31,9 +35,7 @@ const dot = document.querySelector('.dot');
 let disNum = '';
 let showDot = false;
 
-
-
-
+// DISPLAY DOT ONCE
 dot.addEventListener('click', (e)=>{
   if(e.target.value === '.' && !showDot){
     showDot = true;
@@ -44,37 +46,49 @@ dot.addEventListener('click', (e)=>{
   }
 });
 
+// DISPLAY NUMBERS ON SCREEN
 numbersEl.forEach(num =>{
   num.addEventListener('click', (e)=>{
-    // console.log(e.target.innerText)
     showDot = true;
     disNum += e.target.innerText;
-    // console.log(disNum)
     displayEl.value = disNum;
   })
 })
 
-operatorEl.forEach(operate => {
-  operate.addEventListener('click', (e)=> {
+operatorEl.forEach(operator => {
+  operator.addEventListener('click', ()=> {
     let lastOperation = displayEl.innerText;
-    displayEl.innerText = '';
-    // let nextOperation = operator.innerText;
+    displayEl.value = '';
+    disNum = '';
+    let nextOperation = displayEl.innerText;
 
-    // let result = 
-    // console.log(lastOperation)
-    
+    if(operatorEl == '+'){
+      let result = lastOperation + nextOperation
+    } else if (operatorEl == '-'){
+      let result = lastOperation - nextOperation
+    } else if (operatorEl == 'x'){
+      let result = lastOperation * nextOperation
+    } else if (operatorEl == '/'){
+      let result = lastOperation / nextOperation
+    } else {
+      return
+    }
+
+    return result
   });
-  return;
 })
 
-function mathsOperation(){
+// function mathsOperation(){
 
-}
+// }
 
-clearAllEl.addEventListener('click', (e) =>{
-  displayEl.innerText = "0";
+
+clearAllEl.addEventListener('click', () =>{
+  displayEl.value = 0;
+  disNum = ""
 });
 
-// clearLastEl.addEventListener('click', (e)=>
-
-// );
+clearLastEl.addEventListener('click', () => {
+  let numArray = displayEl.value
+  disNum = numberArray.pop();
+})

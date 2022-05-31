@@ -79,7 +79,6 @@ h3 {
   width: 50px;
   background-color: var(--plate);
   -webkit-appearance: none;
-  /* color: var(--equalSign); */
 }
 
 #buttonFig {
@@ -100,8 +99,9 @@ h3 {
   height: 70px;
   width: 95%;
   text-align: right;
-  padding: 20px 20px 0px 0px;
+  padding: 10px 20px 10px 0px;
   font-size: 20px;
+  font-weight: bold;
   color: var(--color);
 }
 
