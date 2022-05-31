@@ -78,9 +78,6 @@ operatorEl.forEach(operator => {
   });
 })
 
-// function mathsOperation(){
-
-// }
 
 
 clearAllEl.addEventListener('click', () =>{
