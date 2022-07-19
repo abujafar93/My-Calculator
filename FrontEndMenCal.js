@@ -57,12 +57,6 @@ clearLastInput.addEventListener('click', ()=>{
 })
 
 
-// const displayEl = document.querySelector('.display');
-// const numbersEl = document.querySelectorAll('.num');
-// const operatorEl = document.querySelectorAll('.operator');
-// const equalEl = document.querySelector('.equalSign');
-// const clearLastEl = document.querySelector('.clearLastInput');
-// const clearAllEl = document.querySelector('.clearAllInput');
 
 // const dot = document.querySelector('.dot');
 
@@ -80,44 +74,6 @@ clearLastInput.addEventListener('click', ()=>{
 //   }
 // });
 
-// DISPLAY NUMBERS ON SCREEN
-// numbersEl.forEach(num =>{
-//   num.addEventListener('click', (e)=>{
-//     showDot = true;
-//     disNum += e.target.innerText;
-//     displayEl.value = disNum;
-//   })
-// })
-
-// operatorEl.forEach(operator => {
-//   operator.addEventListener('click', ()=> {
-//     let lastOperation = displayEl.innerText;
-//     displayEl.value = '';
-//     disNum = '';
-//     let nextOperation = displayEl.innerText;
-
-//     if(operatorEl == '+'){
-//       let result = lastOperation + nextOperation
-//     } else if (operatorEl == '-'){
-//       let result = lastOperation - nextOperation
-//     } else if (operatorEl == 'x'){
-//       let result = lastOperation * nextOperation
-//     } else if (operatorEl == '/'){
-//       let result = lastOperation / nextOperation
-//     } else {
-//       return
-//     }
-
-//     return result
-//   });
-// })
-
-
-
-// clearAllEl.addEventListener('click', () =>{
-//   displayEl.value = 0;
-//   disNum = ""
-// });
 
 // clearLastEl.addEventListener('click', () => {
 //   let numArray = displayEl.value
